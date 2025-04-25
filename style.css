@@ -1,0 +1,134 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+/* Task input area */
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#addTaskBtn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#addTaskBtn:hover {
+    background-color: #45a049;
+}
+
+/* Task Filters */
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter {
+    padding: 10px 20px;
+    background-color: #f4f4f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter:hover {
+    background-color: #ddd;
+}
+
+/* Task List */
+.task-list {
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.task-item.completed {
+    text-decoration: line-through;
+    background-color: #d3ffd3;
+}
+
+.task-item button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/* Sort Options */
+.sort-options {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#sortNewestBtn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sortNewestBtn:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile-friendly Design */
+@media (max-width: 600px) {
+    .task-input {
+        flex-direction: column;
+    }
+
+    #taskInput {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .filter {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+}
